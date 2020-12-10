@@ -1,0 +1,16 @@
+{
+    "baseUrl":"https://globo.com",
+    "viewportHeight": 660, 
+    "viewportWidth": 1000,
+    "defaultCommandTimeout": 10000,
+
+    "video": true, 
+    "videoUploadOnlinePasses": true,
+    "videoCompression": 32,
+
+    "reporter": "mochawesome",
+    "reporterOptions": {
+        "overwrite":false
+    }
+
+}

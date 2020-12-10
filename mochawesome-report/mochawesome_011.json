@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-12-10T17:40:38.235Z",
+    "end": "2020-12-10T17:41:52.939Z",
+    "duration": 74704,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "097275cf-33ee-437c-972b-48a6a8e66914",
+      "title": "",
+      "fullFile": "cypress/integration/test.feature",
+      "file": "cypress/integration/test.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "160e4eae-77a3-40a1-9892-9072fd7bc118",
+          "title": "Acessar reportagem do São Paulo",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Realizar acesso a reportagem do São Paulo",
+              "fullTitle": "Acessar reportagem do São Paulo Realizar acesso a reportagem do São Paulo",
+              "timedOut": null,
+              "duration": 74519,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying: Expected to find content: 'Majestoso abrirá série complicada na tabela para o líder São Paulo' within the element: <h1.content-head__title> but never did.",
+                "estack": "AssertionError: Timed out retrying: Expected to find content: 'Majestoso abrirá série complicada na tabela para o líder São Paulo' within the element: <h1.content-head__title> but never did.\n    at TestPage.validarReportagem (https://globo.com/__cypress/tests?p=cypress/integration/test.feature:103:44)\n    at Context.eval (https://globo.com/__cypress/tests?p=cypress/integration/test.feature:130:12)\n    at Context.resolveAndRunStepDefinition (https://globo.com/__cypress/tests?p=cypress/integration/test.feature:11878:9)\n    at Context.eval (https://globo.com/__cypress/tests?p=cypress/integration/test.feature:11219:35)",
+                "diff": null
+              },
+              "uuid": "b78980b0-f4a2-4f4e-9315-c51245bffb46",
+              "parentUUID": "160e4eae-77a3-40a1-9892-9072fd7bc118",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "b78980b0-f4a2-4f4e-9315-c51245bffb46"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 74519,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false
+      },
+      "version": "5.1.0"
+    }
+  }
+}

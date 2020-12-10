@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-12-09T03:22:13.238Z",
+    "end": "2020-12-09T03:22:55.916Z",
+    "duration": 42678,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "61479704-56de-48d0-ae3c-286bb12a930d",
+      "title": "",
+      "fullFile": "cypress/integration/test.feature",
+      "file": "cypress/integration/test.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "eaabe8a5-2fd2-4fd3-8ed8-01faa35aba75",
+          "title": "Acessar reportagem do Neymar",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Realizar acesso a reportagem do Neymar",
+              "fullTitle": "Acessar reportagem do Neymar Realizar acesso a reportagem do Neymar",
+              "timedOut": null,
+              "duration": 42118,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying: Expected to find element: `.hui-premium__photo hui-lazy`, but never found it.",
+                "estack": "AssertionError: Timed out retrying: Expected to find element: `.hui-premium__photo hui-lazy`, but never found it.\n    at TestPage.clicarReportagem (https://globo.com/__cypress/tests?p=cypress/integration/test.feature:96:10)\n    at Context.eval (https://globo.com/__cypress/tests?p=cypress/integration/test.feature:127:12)\n    at Context.resolveAndRunStepDefinition (https://globo.com/__cypress/tests?p=cypress/integration/test.feature:11878:9)\n    at Context.eval (https://globo.com/__cypress/tests?p=cypress/integration/test.feature:11219:35)",
+                "diff": null
+              },
+              "uuid": "64a51077-2b10-4134-b2d3-f5f59b319e04",
+              "parentUUID": "eaabe8a5-2fd2-4fd3-8ed8-01faa35aba75",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "64a51077-2b10-4134-b2d3-f5f59b319e04"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 42118,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false
+      },
+      "version": "5.1.0"
+    }
+  }
+}

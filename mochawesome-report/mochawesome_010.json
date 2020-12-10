@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-12-10T17:36:33.131Z",
+    "end": "2020-12-10T17:37:25.082Z",
+    "duration": 51951,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ec728354-c1eb-4516-a173-4bbdaeb5137a",
+      "title": "",
+      "fullFile": "cypress/integration/test.feature",
+      "file": "cypress/integration/test.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "95541334-6125-4a32-ba31-4dae9fe05eea",
+          "title": "Acessar reportagem do São Paulo",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Realizar acesso a reportagem do São Paulo",
+              "fullTitle": "Acessar reportagem do São Paulo Realizar acesso a reportagem do São Paulo",
+              "timedOut": null,
+              "duration": 51792,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying: Expected to find element: `.content-head__title`, but never found it.",
+                "estack": "AssertionError: Timed out retrying: Expected to find element: `.content-head__title`, but never found it.\n    at TestPage.validarReportagem (https://globo.com/__cypress/tests?p=cypress/integration/test.feature:103:10)\n    at Context.eval (https://globo.com/__cypress/tests?p=cypress/integration/test.feature:130:12)\n    at Context.resolveAndRunStepDefinition (https://globo.com/__cypress/tests?p=cypress/integration/test.feature:11878:9)\n    at Context.eval (https://globo.com/__cypress/tests?p=cypress/integration/test.feature:11219:35)",
+                "diff": null
+              },
+              "uuid": "3e4ba99a-ee39-4cc1-8cdf-e9b120ced9f5",
+              "parentUUID": "95541334-6125-4a32-ba31-4dae9fe05eea",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "3e4ba99a-ee39-4cc1-8cdf-e9b120ced9f5"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 51792,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false
+      },
+      "version": "5.1.0"
+    }
+  }
+}

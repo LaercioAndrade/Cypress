@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-12-09T03:16:37.241Z",
+    "end": "2020-12-09T03:16:49.622Z",
+    "duration": 12381,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ee8b8569-926b-4a53-8754-bb471f851fd6",
+      "title": "",
+      "fullFile": "cypress/integration/test.feature",
+      "file": "cypress/integration/test.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7676c4ef-910d-491d-91f6-7947667a269f",
+          "title": "Acessar reportagem do Neymar",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Realizar acesso a reportagem do Neymar",
+              "fullTitle": "Acessar reportagem do Neymar Realizar acesso a reportagem do Neymar",
+              "timedOut": null,
+              "duration": 12252,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Syntax error, unrecognized expression: .class=\"hui-premium__title\"",
+                "estack": "Error: Syntax error, unrecognized expression: .class=\"hui-premium__title\"\n    at Function.Sizzle.error (https://globo.com/__cypress/runner/cypress_runner.js:87720:8)\n    at Sizzle.tokenize (https://globo.com/__cypress/runner/cypress_runner.js:88372:11)\n    at Sizzle.select (https://globo.com/__cypress/runner/cypress_runner.js:88799:20)\n    at Function.Sizzle [as find] (https://globo.com/__cypress/runner/cypress_runner.js:87024:9)\n    at jQuery.fn.init.find (https://globo.com/__cypress/runner/cypress_runner.js:89055:11)\n    at new jQuery.fn.init (https://globo.com/__cypress/runner/cypress_runner.js:89170:40)\n    at Object.query (https://globo.com/__cypress/runner/cypress_runner.js:179894:10)\n    at $Cy.$$ (https://globo.com/__cypress/runner/cypress_runner.js:169195:17)\n    at getElements (https://globo.com/__cypress/runner/cypress_runner.js:158204:20)\n    at tryCatcher (https://globo.com/__cypress/runner/cypress_runner.js:10584:23)\n    at Function.Promise.attempt.Promise.try (https://globo.com/__cypress/runner/cypress_runner.js:7858:29)\n    at resolveElements (https://globo.com/__cypress/runner/cypress_runner.js:158254:27)\n    at Context.get (https://globo.com/__cypress/runner/cypress_runner.js:158265:14)\n    at https://globo.com/__cypress/runner/cypress_runner.js:169423:15\n    at tryCatcher (https://globo.com/__cypress/runner/cypress_runner.js:10584:23)",
+                "diff": null
+              },
+              "uuid": "9c9b9231-2b71-43f5-9183-04508d03d675",
+              "parentUUID": "7676c4ef-910d-491d-91f6-7947667a269f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "9c9b9231-2b71-43f5-9183-04508d03d675"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 12252,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false
+      },
+      "version": "5.1.0"
+    }
+  }
+}
